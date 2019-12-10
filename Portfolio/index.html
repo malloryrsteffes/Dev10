@@ -11,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mallory Steffes' Portfolio</title>
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <!-- Styling for Table -->
     <style>
       table {
         width: 90%;
@@ -41,21 +42,30 @@
   </head>
   <body>
     <main>
+      <!-- HEADER -->
       <header>
         <h1>Portfolio for Mallory Steffes</h1>
       </header>
 
-      <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
+      <!-- NAVBAR -->
       <nav>
         <a href="./projects.html">Projects</a>
         <a href="./contact.html">Contact</a>
         <a href="./testimonials.html">Testimonials</a>
+        <div class="clear-float"></div>
       </nav>
 
+      <!-- MAIN -->
+
       <section>
+        <!-- ABOUT -->
         <article id="about-me">
           <h2><em>About Me</em></h2>
-          <img src="images/portfolio.png" alt="portrait of Mallory Steffes" />
+          <img
+            src="images/portfolio.png"
+            alt="portrait of Mallory Steffes"
+            style="height: 400px;"
+          />
           <p>
             I am a recent bootcamp graduate, well on the way to a much wanted
             career change. I've spent most of my life in the customer service
@@ -69,86 +79,93 @@
           </p>
           <p>
             I was born in Texas, but have lived in
-            <span
-              style="background-color: lightblue; border: thin solid darkblue;"
-              >Florida, California, and New York</span
-            >
-            as well. I love to travel and discover new cities, as well as visit
-            historically rich places to learn more about the world I live in.
+            <strong>Florida, California, and New York</strong> as well. I love
+            to travel and discover new cities, as well as visit historically
+            rich places to learn more about the world I live in.
           </p>
+          <div class="clear-float"></div>
         </article>
+        <!-- EXPERIENCES -->
         <article id="past-experiences">
           <h2><em>Past Experiences</em></h2>
           <img src="images/nyc.jpg" alt="NYC Skyline" />
-
-          <table>
-            <caption>
-              Employment History
-            </caption>
-            <thead>
-              <tr>
-                <th>Years of Employment</th>
-                <th>Title</th>
-                <th>Company</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>2017-2019</td>
-                <td>Guest Relations Supervisor</td>
-                <td>Crafted Hospitality</td>
-              </tr>
-              <tr>
-                <td>2016-2017</td>
-                <td>Maitre D'</td>
-                <td>Craft Restaurant</td>
-              </tr>
-              <tr>
-                <td>2015-2016</td>
-                <td>Casting Assistant</td>
-                <td>The Hippodrome Theatre</td>
-              </tr>
-              <tr>
-                <td>2012-2016</td>
-                <td>Student</td>
-                <td>The University of Florida</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="right-content">
+            <table>
+              <caption>
+                Employment History
+              </caption>
+              <thead>
+                <tr>
+                  <th>Years of Employment</th>
+                  <th>Title</th>
+                  <th>Company</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2017-2019</td>
+                  <td>Guest Relations Supervisor</td>
+                  <td>Crafted Hospitality</td>
+                </tr>
+                <tr>
+                  <td>2016-2017</td>
+                  <td>Maitre D'</td>
+                  <td>Craft Restaurant</td>
+                </tr>
+                <tr>
+                  <td>2015-2016</td>
+                  <td>Casting Assistant</td>
+                  <td>The Hippodrome Theatre</td>
+                </tr>
+                <tr>
+                  <td>2012-2016</td>
+                  <td>Student</td>
+                  <td>The University of Florida</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="clear-float"></div>
         </article>
+        <!-- HOBBIES -->
         <article id="hobbies">
           <h2><em>Hobbies</em></h2>
           <img src="images/football.jpg" alt="portrait of a football player" />
-          <ul>
-            <li>Sports Teams</li>
-            <ol>
-              <li>Dallas Cowboys</li>
-              <li>Florida Gators</li>
-              <li>UCF Knights</li>
-            </ol>
-            <li>Video Games</li>
-            <ol>
-              <li>The Last of Us</li>
-              <li>Overwatch</li>
-              <li>COD: Modern Warfare</li>
-            </ol>
-          </ul>
-          <ul>
-            <li>Desserts</li>
+          <div class="right-content">
             <ul>
-              <li>Root Beer Float</li>
-              <li>Triple Chocolate Brownies</li>
-              <li>Texas Gold Bars</li>
+              <li>Sports Teams</li>
+              <ol>
+                <li>Dallas Cowboys</li>
+                <li>Florida Gators</li>
+                <li>UCF Knights</li>
+              </ol>
+              <li>Video Games</li>
+              <ol>
+                <li>The Last of Us</li>
+                <li>Overwatch</li>
+                <li>COD: Modern Warfare</li>
+              </ol>
             </ul>
-            <li>Healthy Activities</li>
             <ul>
-              <li>Weightlifting</li>
-              <li>Pokemon hunting</li>
-              <li>Paddleboarding</li>
+              <li>Desserts</li>
+              <ul>
+                <li>Root Beer Float</li>
+                <li>Triple Chocolate Brownies</li>
+                <li>Texas Gold Bars</li>
+              </ul>
+              <li>Healthy Activities</li>
+              <ul>
+                <li>Weightlifting</li>
+                <li>Pokemon hunting</li>
+                <li>Paddleboarding</li>
+              </ul>
             </ul>
-          </ul>
+          </div>
+          <div class="clear-float"></div>
         </article>
       </section>
+
+      <!-- FOOTER -->
 
       <footer>
         <p>&copy; 2019 Mallory Steffes. All rights reserved.</p>
