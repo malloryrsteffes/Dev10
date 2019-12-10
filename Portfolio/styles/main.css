@@ -1,0 +1,30 @@
+/* 
+Creator: Mallory Steffes
+Date Created: 12.10.19
+Date last modified: 12.10.19
+*/
+
+body {
+  background-color: #fef9ff;
+  font-family: arial, helvetica, sans-serif;
+  color: #0d1f2d;
+}
+
+header, footer {
+  background-color: #82968c;
+  color: #fef9ff;
+  height: 100px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+nav {
+    border-top: 3px dashed #6A706E;
+    border-bottom: 3px dashed #6A706E;
+    margin-top: 10px;
+    padding: 10px;
+}
