@@ -4,31 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- MENU STYLING -->
     <style>
       .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        background: #2e5266;
+        border: 1px solid #6e8898;
       }
       .menu-item {
-          text-align: center;
-          width: 30%
+        text-align: center;
+        width: 30%;
+      }
+      .menu-item :first-child {
+        font-size: 1.3rem;
       }
     </style>
+    <!-- END MENU STYLING -->
+
     <title>Menu</title>
   </head>
   <body>
     <main>
-      <header style="text-align:center">
+      <header>
         <h1>Mom's Magic Munchems</h1>
       </header>
-      <hr />
 
       <nav>
         <a href="./index.html">Home</a>
         <a href="./menu.html">Menu</a>
         <a href="./contact.html">Contact Us</a>
-        <hr />
       </nav>
       <section class="container">
         <article class="menu-item">
@@ -80,6 +92,10 @@
           <p>$7.95</p>
         </article>
       </section>
+      <footer>
+        <p>1234 Good Eats Rd, Tampa, FL, 33558</p>
+        <p>123-456-7890</p>
+      </footer>
     </main>
   </body>
 </html>

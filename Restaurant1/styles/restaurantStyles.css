@@ -1,0 +1,70 @@
+/* 
+Created by: Mallory Steffes
+Date created: 12.11.19
+Last revision: 12.11.19
+*/
+body {
+  margin: 0;
+}
+
+main {
+  align-items: center;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2rem;
+  background: #cc5803;
+  height: 100px;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+nav {
+  background: #e2c044;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a:link {
+  text-decoration: underline;
+  margin: 20px;
+  padding: 20px;
+}
+
+nav a:visited {
+  color: #2e5266;
+}
+
+nav a:hover {
+  font-weight: bold;
+  text-shadow: -0.25px -0.25px 0 black, 0.25px 0.25px black;
+}
+
+nav a:active {
+  text-decoration: none;
+}
+
+section {
+  background: #2e5266;
+  padding: 20px;
+  color: white;
+}
+
+footer {
+  background: #e2c044;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer p {
+  margin: auto;
+} */
