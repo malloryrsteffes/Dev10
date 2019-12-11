@@ -65,6 +65,33 @@ footer {
   align-items: center;
 }
 
-/* footer p {
+.menu-title {
+  margin: 0;
+  background: #2e5266;
+  color: white;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+table {
+  width: 90%;
   margin: auto;
-} */
+  border: 1px solid #0d1f2d;
+}
+table,
+td {
+  border-bottom: 1px solid #0d1f2d;
+  border-top: 1px solid #0d1f2d;
+  border-collapse: collapse;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+tr {
+  background-color: #89b6a5;
+}
+tr:nth-child(odd) {
+  background-color: #cc5803;
+}
+tr {
+  height: 40px;
+}
