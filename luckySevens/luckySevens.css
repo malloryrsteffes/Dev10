@@ -1,0 +1,35 @@
+body {
+  background: url("./images/photo-1542145177-4dc9b8029711.jpeg");
+  background-size: cover;
+}
+
+#main-container {
+  align-items: center;
+  width: 60%;
+  margin-top: 10%;
+  background: rgba(247, 246, 246, 0.9);
+  border-radius: 20px;
+  padding-bottom: 10px;
+  border: 1px solid darkgreen;
+}
+
+form {
+  padding: 40px;
+}
+.jumbotron {
+  border-radius: 20px 20px 0px 0px;
+  margin: 0;
+  background: rgb(0, 100, 0, .9);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  font-size: 3.5em;
+  padding: 0;
+}
+
+#results {
+  background: white;
+  padding: 10px;
+}

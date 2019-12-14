@@ -12,13 +12,14 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="luckySevens.css" type="text/css" />
     <script rel="stylesheet" src="luckySevens.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <div class="container">
-          <h1>Lucky Sevens</h1>
+    <div class="container" id="main-container">
+      <div class="row">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container"><h1>Lucky Sevens</h1></div>
         </div>
       </div>
       <form name="luckySevens" onsubmit="return playRound()">
@@ -35,13 +36,14 @@
           <button
             type="submit"
             id="submitButton"
-            class="btn btn-lg btn-success"
+            class="btn btn-success"
+            style="width: 100px;"
           >
             Play
           </button>
         </div>
       </form>
-      <hr>
+      <hr />
       <div id="results" style="display:none;">
         <h1>Results:</h1>
         <table class="table table-striped">

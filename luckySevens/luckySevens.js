@@ -9,6 +9,7 @@ function playRound() {
 
   if (money <= 0) {
     alert("Please enter a positive number!");
+    return false;
   } else {
     while (money > 0) {
       die1 = rollDice();
@@ -31,10 +32,11 @@ function playRound() {
   }
   document.getElementById("results").style.display = "block";
   document.getElementById("submitButton").innerText = "Play Again!";
-  document.getElementById("start").innerText = bet;
+  document.getElementById("start").innerText = "$" + bet;
   document.getElementById("totalRolls").innerText = rolls;
-  document.getElementById("highestAmount").innerText = maxWins;
+  document.getElementById("highestAmount").innerText = "$" + maxWins;
   document.getElementById("rollsAtHighest").innerText = rollsAtWin;
+  document.getElementById("startingBet").value = "";
   return false;
 }
 
