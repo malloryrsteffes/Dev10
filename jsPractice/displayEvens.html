@@ -16,7 +16,11 @@
   <body>
     <div class="container">
       <div class="jumbotron"><h1>Sample</h1></div>
-      <form name="evensForm">
+      <form
+        name="evensForm"
+        onsubmit="return validateItems()"
+        onreset="resetForm();"
+      >
         <div class="form-group form-inline">
           <label for="startingPoint">Starting Point</label>
           <input type="number" class="form-control" id="startingPoint" />
@@ -33,11 +37,13 @@
           <button type="submit" id="submitButton" class="btn btn-default">
             Display Events
           </button>
+          <button type="reset" id="resetButton" class="btn btn-default">
+              Reset
+            </button>
         </div>
       </form>
 
-      <div id="results">
-      </div>
+      <div id="results"></div>
     </div>
   </body>
 </html>

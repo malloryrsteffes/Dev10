@@ -26,11 +26,15 @@ function resetForm() {
   document.forms["evensForm"]["startingPoint"].focus();
 }
 
-function findEvens(startingPoint, endingPoint, step) {
+function findEvens() {
+  clearErrors();
+  var startingPoint = parseInt(document.getElementById("startingPoint").value);
+  var endingPoint = parseInt(document.getElementById("endingPoint").value);
+  var step = parseInt(document.getElementById("step").value);
   let numbers = [];
   let newNumber = startingPoint + step;
   for (var i = 0; i < endingPoint; i++) {
-    if (newNumber > endingPoint) break;
+    if (newNumber >= endingPoint) break;
 
     if (newNumber % 2 != 0) {
       newNumber = newNumber + step;
@@ -40,15 +44,26 @@ function findEvens(startingPoint, endingPoint, step) {
     }
   }
   console.log(numbers);
-}
 
-findEvens(2, 18, 7);
+  document.getElementById("results").style.display = "block";
+
+  document.getElementById("results").innerText =
+    "Here are the even numbers between " +
+    startingPoint +
+    " and " +
+    endingPoint +
+    " by " +
+    step +
+    "'s: \n" +
+    numbers;
+}
 
 function validateItems() {
   clearErrors();
-  var startingPoint = document.forms["evensForm"]["startingPoint"].value;
-  var endingPoint = document.forms["evensForm"]["endingPoint"].value;
-  var step = document.forms["evensForm"]["step"].value;
+  var startingPoint = document.getElementById("startingPoint").value;
+  var endingPoint = document.getElementById("endingPoint").value;
+  var step = document.getElementById("step").value;
+
   if (startingPoint == "" || isNaN(startingPoint)) {
     alert("The Starting Point must be filled in with a number.");
     document.forms["evensForm"]["startingPoint"].parentElement.className =
@@ -70,20 +85,8 @@ function validateItems() {
     document.forms["evensForm"]["step"].focus();
     return false;
   }
-  document.getElementById("results").style.display = "block";
-  document.getElementById("submitButton").innerText = "Recalculate";
-
-  document.getElementById("results").innerText =
-    "Here are the even numbers between " +
-    startingPoint +
-    " and " +
-    endingPoint +
-    " by " +
-    step +
-    "'s.";
-  document.getElementById("subtractResult").innerText = num1 - num2;
-  document.getElementById("multiplyResult").innerText = num1 * num2;
-  document.getElementById("divideResult").innerText = num1 / num2;
+  findEvens(startingPoint, endingPoint, step);
+  
   // We are returning false so that the form doesn't submit
   // and so that we can see the results
   return false;
