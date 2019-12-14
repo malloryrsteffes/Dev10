@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="displayEvens.js"></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      label {
+        width: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron"><h1>Sample</h1></div>
+      <form name="evensForm">
+        <div class="form-group form-inline">
+          <label for="startingPoint">Starting Point</label>
+          <input type="number" class="form-control" id="startingPoint" />
+        </div>
+        <div class="form-group form-inline">
+          <label for="endingPoint">Ending Point</label>
+          <input type="number" class="form-control" id="endingPoint" />
+        </div>
+        <div class="form-group form-inline">
+          <label for="step">Step</label>
+          <input type="number" class="form-control" id="step" />
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submitButton" class="btn btn-default">
+            Display Events
+          </button>
+        </div>
+      </form>
+
+      <div id="results">
+      </div>
+    </div>
+  </body>
+</html>
