@@ -14,15 +14,14 @@ main {
   font-family: "Open Sans", sans-serif;
 }
 
-#main-container {
+.main-container {
   padding: 0;
 }
 
 header {
   font-family: "Abril Fatface", cursive;
-  font-size: 2rem;
   background: #cc5803;
-  height: 100px;
+  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,6 +29,9 @@ header {
 
 header h1 {
   margin-bottom: 0;
+  font-size: 4rem;
+  color: white;
+
 }
 
 .nav {
@@ -83,7 +85,7 @@ section {
 
 footer {
   background: #e2c044;
-  height: 100px;
+  min-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,8 +95,13 @@ footer {
   margin: 0;
   background: #2e5266;
   color: white;
-  padding: 10px;
-  font-size: 1.5rem;
+  text-decoration: underline;
+  padding: 3%;
+  font-family: "Abril Fatface", cursive
+}
+.menu-title h2 {
+  font-size: 50px;
+  font-weight: 100;
 }
 
 table {
