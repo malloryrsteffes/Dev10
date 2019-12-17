@@ -31,13 +31,14 @@ header h1 {
   margin-bottom: 0;
   font-size: 4rem;
   color: white;
-
 }
 
 .nav {
   background: #e2c044;
 }
 .nav-tabs {
+  font-family: "Abril Fatface", cursive;
+
   border-bottom: 1px solid #2e5266;
 }
 
@@ -64,23 +65,35 @@ header h1 {
   background: url("../images/megumi-nachev-Yv5F2D7bMrw-unsplash.jpg");
   background-size: cover;
   color: white;
-  
 }
 
 #jumbo-container {
   padding: 10px;
-  background: rgb(204, 88, 3, .9);
+  background: rgb(204, 88, 3, 0.9);
 }
 
 #jumbo-heading {
-  font-family: "Abril Fatface", cursive
+  font-family: "Abril Fatface", cursive;
 }
 
 section {
   background: #2e5266;
-  padding: 20px;
   color: white;
   min-height: 100vh;
+}
+
+.news-carousel {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#about-us-container {
+  margin: 0;
+  padding: 20px;
+  background: #cc5803;
+  color: white;
 }
 
 footer {
@@ -97,7 +110,7 @@ footer {
   color: white;
   text-decoration: underline;
   padding: 3%;
-  font-family: "Abril Fatface", cursive
+  font-family: "Abril Fatface", cursive;
 }
 .menu-title h2 {
   font-size: 50px;
