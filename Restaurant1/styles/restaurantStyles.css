@@ -3,6 +3,7 @@ Created by: Mallory Steffes
 Date created: 12.11.19
 Last revision: 12.11.19
 */
+
 body {
   margin: 0;
 }
@@ -13,55 +14,71 @@ main {
   font-family: "Open Sans", sans-serif;
 }
 
+#main-container {
+  padding: 0;
+}
+
 header {
   font-family: "Abril Fatface", cursive;
   font-size: 2rem;
   background: #cc5803;
   height: 100px;
-}
-
-header h1 {
-  margin-top: 0;
-}
-
-nav {
-  background: #e2c044;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-nav a:link {
+header h1 {
+  margin-bottom: 0;
+}
+
+.nav {
+  background: #e2c044;
+}
+.nav-tabs {
+  border-bottom: 1px solid #2e5266;
+}
+
+.nav a:link {
   text-decoration: underline;
-  margin: 20px;
-  padding: 20px;
   color: white;
 }
 
-nav a:visited {
+.nav a:visited {
   color: white;
 }
 
-nav a:hover {
+.nav a:hover {
   font-weight: bold;
   text-shadow: -0.25px -0.25px 0 black, 0.25px 0.25px black;
 }
 
-nav a:active {
-  text-decoration: none;
+.nav .active {
+  text-decoration: none !important;
 }
 
-nav .btn {
-  background-color: #5b7d87;
-  color: #fef9ff;
-  width: 150px;
+.jumbotron {
+  margin-bottom: 0;
+  background: url("../images/megumi-nachev-Yv5F2D7bMrw-unsplash.jpg");
+  background-size: cover;
+  color: white;
+  
+}
+
+#jumbo-container {
+  padding: 10px;
+  background: rgb(204, 88, 3, .9);
+}
+
+#jumbo-heading {
+  font-family: "Abril Fatface", cursive
 }
 
 section {
   background: #2e5266;
   padding: 20px;
   color: white;
-  min-height:100vh;
+  min-height: 100vh;
 }
 
 footer {
