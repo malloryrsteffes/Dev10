@@ -26,7 +26,6 @@ header h1 {
 
 nav {
   background: #e2c044;
-  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,10 +35,11 @@ nav a:link {
   text-decoration: underline;
   margin: 20px;
   padding: 20px;
+  color: white;
 }
 
 nav a:visited {
-  color: #2e5266;
+  color: white;
 }
 
 nav a:hover {
@@ -51,10 +51,17 @@ nav a:active {
   text-decoration: none;
 }
 
+nav .btn {
+  background-color: #5b7d87;
+  color: #fef9ff;
+  width: 150px;
+}
+
 section {
   background: #2e5266;
   padding: 20px;
   color: white;
+  min-height:100vh;
 }
 
 footer {
