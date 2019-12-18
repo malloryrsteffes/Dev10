@@ -39,7 +39,6 @@
         background: #2e5266;
         padding-top: 5%;
         padding-bottom: 5%;
-       
       }
 
       label.required {
@@ -72,7 +71,11 @@
           <!-- CONTACT FORM -->
           <div class="container" id="contact-container">
             <h2 style="font-family: Abril Fatface, cursive">Contact Us</h2>
-            <form>
+            <form
+              id="contact-form"
+              onsubmit="return checkForm(this)"
+              novalidate
+            >
               <div class="form-group row">
                 <label for="name" class="col-sm-2 col-form-label">Name</label>
                 <div class="col-sm-10">
@@ -96,7 +99,8 @@
                     required
                   />
                   <small id="emailHelp" class="form-text text-muted"
-                    >We'll never share your contact info with anyone else!</small
+                    >We'll never share your contact info with anyone
+                    else!</small
                   >
                 </div>
               </div>
@@ -118,7 +122,7 @@
                 >
                 <div class="col-sm-10">
                   <select class="form-control" id="reason-for-contact" required>
-                    <option value="catering" selected>Catering</option>
+                    <option value="catering">Catering</option>
                     <option value="private-party">Private Party</option>
                     <option value="feedback">Feedback</option>
                     <option value="other">Other</option>
@@ -228,27 +232,6 @@
                 </div>
               </div>
             </form>
-            <!-- 
-          <form action="submit.html" method="POST">
-          
-            <label for="days">Best days to contact you: </label>
-            <input type="checkbox" id="monday" name="days" value="monday" />
-            <label for="monday">M</label>
-            <input type="checkbox" id="tuesday" name="days" value="tuesday" />
-            <label for="tuesday">T</label>
-            <input
-              type="checkbox"
-              id="wednesday"
-              name="days"
-              value="wednesday"
-            />
-            <label for="wednesday">W</label>
-            <input type="checkbox" id="thursday" name="days" value="thursday" />
-            <label for="thursday">Th</label>
-            <input type="checkbox" id="friday" name="days" value="friday" />
-            <label for="friday">F</label><br />
-            <input type="submit" name="submit" value="Submit" />
-          </form> -->
           </div>
         </section>
         <footer>
@@ -273,5 +256,34 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <!-- FORM VALIDATION -->
+    <script>
+      const form = document.getElementById("contact-form");
+      const name = document.getElementById("name");
+      const email = document.getElementById("mail");
+      const phone = document.getElementById("phone");
+      const reason = document.getElementById("reason-for-contact");
+
+      form.addEventListener("submit", event => {
+        event.preventDefault();
+        // actual logic, e.g. validate the form
+        console.log("Form submitted successfuly.");
+      });
+
+      const checkForm = () => {
+        if (form.name.value == "") {
+          alert("Please enter your name!");
+          form.name.focus();
+        } else if (form.email.value == "") {
+          alert("Please enter your email!");
+          form.email.focus();
+        } else if (form.phone.value == "") {
+          alert("Please enter your phone number!");
+          form.phone.focus();
+        }
+        return false;
+        console.log("Form submitted successfully!");
+      };
+    </script>
   </body>
 </html>

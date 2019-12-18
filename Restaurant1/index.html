@@ -24,6 +24,11 @@
     <title>Home Page</title>
   </head>
   <body>
+    <noscript>
+      <div class="error message">
+        We're sorry but our site <strong>requires</strong> JavaScript.
+      </div>
+    </noscript>
     <main>
       <!-- HEADER -->
 
@@ -170,10 +175,10 @@
                 <img
                   src="./images/restaurant.jpg"
                   alt="Hamburger"
-                  style="margin: auto; width: 100%; padding: 20px;"
+                  style="margin: auto; width: 100%; padding: 20px"
                 />
               </div>
-              <div class="col-lg-6 col-md-12">
+              <div class="col-lg-6 col-md-12" style="margin: auto">
                 <h3
                   style="font-family: 'Abril Fatface', cursive; text-decoration: underline"
                 >
@@ -206,6 +211,7 @@
         </footer>
       </div>
     </main>
+
     <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

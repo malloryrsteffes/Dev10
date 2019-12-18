@@ -70,6 +70,7 @@ header h1 {
 #jumbo-container {
   padding: 40px;
   background: rgb(204, 88, 3, .95);
+  border-radius: 10px;
 }
 
 #jumbo-heading {
