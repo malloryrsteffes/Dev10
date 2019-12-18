@@ -62,14 +62,14 @@ header h1 {
 
 .jumbotron {
   margin-bottom: 0;
-  background: url("../images/megumi-nachev-Yv5F2D7bMrw-unsplash.jpg");
-  background-size: cover;
+  background-image: url("../images/megumi-nachev-Yv5F2D7bMrw-unsplash.jpg");
+  background-size: cover; 
   color: white;
 }
 
 #jumbo-container {
-  padding: 10px;
-  background: rgb(204, 88, 3, 0.9);
+  padding: 40px;
+  background: rgb(204, 88, 3, .95);
 }
 
 #jumbo-heading {
@@ -85,13 +85,19 @@ section {
 .news-carousel {
   width: 80%;
   margin: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.carousel-caption {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
 }
 
 #about-us-container {
   margin: 0;
-  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background: #cc5803;
   color: white;
 }
@@ -112,6 +118,7 @@ footer {
   padding: 3%;
   font-family: "Abril Fatface", cursive;
 }
+
 .menu-title h2 {
   font-size: 50px;
   font-weight: 100;
